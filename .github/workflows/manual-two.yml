@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name:
-        run: >-
-          #!/usr/bin/env zsh
-          echo "Which shell am I?"
-          echo "ZSH? $ZSH_VERSION"
+        run: |
+          #!/usr/bin/env zsh \
+          echo "Which shell am I?" \
+          echo "ZSH? $ZSH_VERSION" \
           echo "BASH? $BASH_VERSION"
       - name: Print env vars
         run: env
