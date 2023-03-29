@@ -15,6 +15,6 @@ jobs:
 
     steps:
       - name: Send greeting
-        run: echo "Hello ${{ SHELL }}"
+        run: echo "Hello $SHELL"
       - name: Print env vars
         run: env
