@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Install Just
         run: brew install just
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: Run justfile
         run: just
       - name: Print env vars
