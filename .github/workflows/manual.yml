@@ -14,7 +14,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Send greeting
-        run: echo "Hello $SHELL"
+      - name: Install Just
+        run: brew install just
+      - name: Run justfile
+        run: just
       - name: Print env vars
         run: env
